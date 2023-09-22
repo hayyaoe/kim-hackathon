@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('accountings', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->date_timestamp_get('date_time');
+            $table->timestamp('date_time');
             $table->string('item_name');
             $table->string('category');
-            $table->int('price');
+            $table->integer('price');
         });
     }
 

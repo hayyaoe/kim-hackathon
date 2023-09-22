@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('item_name');
-            $table->int('quantity');
+            $table->integer('quantity');
             $table->string('unit');
         });
     }
