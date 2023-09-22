@@ -7,6 +7,6 @@
     <title>Document/<title>
 </head>
 <body>
-    
+    <h1>ini page index ya bang</h1>
 </body>
 </html>
