@@ -13,11 +13,14 @@ return new class extends Migration
     {
         Schema::create('accountings', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('umkm_id')->constrained('umkms')->cascadeOnUpdate()->cascadeOnDelete();
             $table->timestamps();
-            $table->timestamp('date_time');
+            // $table->timestamp('date_time');
             $table->string('item_name');
             $table->string('category');
             $table->integer('price');
+            $table->integer('quantity');
+            $table->integer('total');
         });
     }
 
