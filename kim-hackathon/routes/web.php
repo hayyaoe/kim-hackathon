@@ -18,3 +18,8 @@ Route::get('/', function () {
 });
 
 Route::resource('Admin', AdminController::class);
+
+Route::get('/sidebar', function () {
+    return view('components.dummy');
+});
+
