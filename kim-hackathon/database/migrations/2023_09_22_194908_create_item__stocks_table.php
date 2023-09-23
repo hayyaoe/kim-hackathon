@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('item__stocks', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('item_name');
-            $table->integer('quantity');
-            $table->string('unit');
+            $table->foreignId('umkm_id')->constrained('umkms')->cascadeOnUpdate()->cascadeOnDelete();
+            $table->string('nama_item');
+            $table->integer('jumlah');
         });
     }
 
