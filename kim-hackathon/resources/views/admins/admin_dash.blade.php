@@ -5,5 +5,11 @@
 @endsection
 
 @section('main')
-    <h1>INI MAIN YA GEZ</h1>
+    @include("components.panel")
+@endsection
+
+@section('footer')
+<footer>
+    <div class="bg-black"></div>
+</footer>
 @endsection
