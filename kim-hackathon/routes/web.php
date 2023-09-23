@@ -23,3 +23,8 @@ Route::get('/sidebar', function () {
     return view('components.dummy');
 });
 
+Route::get('/admin', function () {
+    return view('admins.admin_dash');
+});
+
+
